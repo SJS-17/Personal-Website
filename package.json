@@ -1,0 +1,12 @@
+{
+  "name": "site-work",
+  "version": "1.0.0",
+  "description": "Simple static website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "run:forever": "pm2 start server.js --name site-work",
+    "stop": "pm2 stop site-work",
+    "status": "pm2 status"
+  }
+}

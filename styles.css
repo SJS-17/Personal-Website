@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0f0f0f;
+  --text: #e8e6e3;
+  --muted: #8a8782;
+  --accent: #c9a86c;
+  --accent-soft: rgba(201, 168, 108, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", system-ui, sans-serif;
+  font-weight: 300;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem 2rem;
+  z-index: 10;
+  background: linear-gradient(to bottom, var(--bg) 60%, transparent);
+}
+
+nav {
+  max-width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 6rem 2rem 4rem;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.hero h1 {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 400;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.hero .name {
+  color: var(--accent);
+  display: block;
+  margin-top: 0.15em;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin: 0;
+  max-width: 28ch;
+}
+
+.about,
+.contact {
+  padding: 4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.about h2,
+.contact h2 {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  margin: 0 0 1rem;
+  color: var(--text);
+}
+
+.about p,
+.contact p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 42ch;
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
