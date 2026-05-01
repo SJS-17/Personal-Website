@@ -92,6 +92,22 @@ nav a:hover {
   color: var(--text);
 }
 
+.project__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-right: 0.6rem;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--project-accent) 18%, transparent);
+  border: 1px solid color-mix(in srgb, var(--project-accent) 38%, var(--card-border));
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+  transform: translateY(-2px);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
 .project__meta,
 .project__tech {
   margin: 0.25rem 0 0;
@@ -196,11 +212,57 @@ main {
   color: var(--text);
 }
 
+.about h3 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--accent) 65%, var(--text));
+}
+
 .about p,
 .contact p {
   margin: 0;
   color: var(--muted);
   max-width: 42ch;
+}
+
+.skills__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 0.6rem;
+}
+
+.skills__list li {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+body.home .hero .tagline {
+  font-size: 1.3rem;
+}
+
+body.home .contact p {
+  font-size: 1.05rem;
+  max-width: 54ch;
+}
+
+body.home .about p {
+  font-size: 1.12rem;
+  max-width: 56ch;
+}
+
+body.home .skills__list li {
+  font-size: 1rem;
 }
 
 .contact a {
