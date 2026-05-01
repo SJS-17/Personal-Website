@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Shane Song</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Projects</h1>
+      <p class="tagline">Things I've built or worked on.</p>
+    </section>
+
+    <section class="about">
+      <div class="project project--research">
+        <h2>Research In Evolutionary Coupling Detection</h2>
+        <p class="project__meta">Under Professor Tobias Dürschmid (UCLA) · October 2025 – Present</p>
+        <p class="project__tech"><strong>Tech:</strong> Python, GitPython, srcML, XPath, SQL</p>
+        <ul>
+          <li>
+            Analyzed Git repository commit histories (10,000+ commits) from ROS-based projects to detect violations of the information hiding principle and evaluate a static analysis methodology on large-scale, real-world codebases.
+          </li>
+          <li>
+            Processed each commit using GitPython and generated XML-based abstract syntax trees with srcML, parsing thousands of lines of source code per revision.
+          </li>
+          <li>
+            Queried abstract syntax trees using XPath to track method-level evolutionary coupling, caching dependency data into a SQL database for efficient analysis.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project project--mern">
+        <h2>MERN Stack Messaging Application</h2>
+        <p class="project__meta">June – September 2025</p>
+        <p class="project__tech"><strong>Tech:</strong> MongoDB, Express.js, React.js, Node.js</p>
+        <ul>
+          <li>
+            Developed an end-to-end full-stack messaging application using JavaScript, designing a scalable client-server system supporting 100+ concurrent users and real-time message exchange.
+          </li>
+          <li>
+            Designed and implemented RESTful APIs using Node.js and Express.js and built a dynamic React.js frontend, reducing average response latency by 30% through optimized routing and state management.
+          </li>
+          <li>
+            Integrated MongoDB for secure, persistent data storage, implementing indexed queries and schema design that improved database performance by 40% and ensured reliable message retrieval.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project project--fpga">
+        <h2>FPGA War Card Game</h2>
+        <p class="project__meta">November – December 2025</p>
+        <p class="project__tech"><strong>Tech:</strong> Verilog, AMD Vivado Design Suite</p>
+        <ul>
+          <li>
+            Implemented a hardware-based version of the classic War card game on a Digilent Basys 3 (Artix-7) FPGA, designing modular Verilog/VHDL components in AMD Vivado Design Suite for game logic, finite state control, and user input handling.
+          </li>
+          <li>
+            Engineered custom seven-segment display driver modules, optimizing timing and refresh logic to reduce display latency by 50% and eliminate visual flicker.
+          </li>
+          <li>
+            Integrated a Digilent Pmod I2S audio module to generate real-time gameplay feedback, implementing synchronous audio signal control and state-based sound triggers for enhanced user interaction.
+          </li>
+        </ul>
+      </div>
+
+      <div class="project project--plant">
+        <h2>Plant Society Application</h2>
+        <p class="project__meta">April – June 2025</p>
+        <p class="project__tech"><strong>Tech:</strong> JavaScript, React.js, Node.js, Express.js</p>
+        <ul>
+          <li>
+            Developed a full-stack community platform enabling users to share plant care stories and experiences, designed to support thousands of concurrent users.
+          </li>
+          <li>
+            Built and optimized a responsive user interface using React.js and JavaScript, implementing reusable components and structured routing to improve maintainability and performance.
+          </li>
+          <li>
+            Designed and implemented RESTful APIs for database communication, enabling scalable data storage and retrieval for thousands of user-generated posts.
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Shane Song</p>
+  </footer>
+</body>
+</html>
