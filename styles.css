@@ -120,6 +120,23 @@ nav a:hover {
   font-weight: 600;
 }
 
+.project__repo {
+  margin: 0.5rem 0 0;
+}
+
+.project__repo a {
+  color: var(--project-accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.project__repo a:hover {
+  text-decoration: underline;
+  color: var(--text);
+}
+
 .project--research { --project-accent: #ff5a6a; }
 .project--mern { --project-accent: #f2c94c; }
 .project--fpga { --project-accent: #4fa3ff; }
